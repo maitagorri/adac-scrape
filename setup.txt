@@ -1,0 +1,6 @@
+conda create -n adac-scrape
+conda activate adac-scrape
+conda config --env --add channels conda-forge
+conda config --env --set channel_priority strict
+conda install python=3 ipykernel pandas bs4 requests
+ipython kernel install --user --name=adac-scrape
